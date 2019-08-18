@@ -1,0 +1,49 @@
+{
+  "homepage": "https://aceetheridge.github.io/AaronEtheridge/",
+  "name": "chainweb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "hamburgers": "^1.1.3",
+    "lodash": "^4.17.15",
+    "particles": "^0.3.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-burgers": "^1.3.0",
+    "react-chess": "^1.1.1",
+    "react-dom": "^16.8.6",
+    "react-hamburger": "^0.7.2",
+    "react-hamburger-menu": "^1.1.1",
+    "react-mailto": "^0.4.0",
+    "react-motion": "^0.5.2",
+    "react-particles-js": "^2.7.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-tilt": "^0.1.4",
+    "tachyons": "^4.9.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

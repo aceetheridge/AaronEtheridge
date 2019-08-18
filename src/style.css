@@ -1,0 +1,24 @@
+.blue1 { background-color: rgba(  3,  3, 38,1) }	/* Main Primary background-color */
+.blue150 { background-color: rgba(  3,  3, 38,.5) }
+.blue2 { background-color: rgba(  4,  4, 29,1) }
+.blue3 { background-color: rgba(  9,  9, 49,1) }
+.blue4 { background-color: rgba(  5,  5, 80,1) }
+.blue5 { background-color: rgba( 14, 14,118,1) }
+
+.purple1 { background-color: rgba( 17,  2, 36,1) }	/* Main Secondary background-color (1) */
+.purple2 { background-color: rgba( 14,  2, 28,1) }
+.purple3 { background-color: rgba( 24,  6, 47,1) }
+.purple4 { background-color: rgba( 35,  3, 78,1) }
+.purple5 { background-color: rgba( 53,  8,114,1) }
+
+.teal1 { background-color: rgba(  1, 20, 35,1) }	/* Main Secondary background-color (2) */
+.teal2 { background-color: rgba(  2, 16, 27,1) }
+.teal3 { background-color: rgba(  4, 27, 45,1) }
+.teal4 { background-color: rgba(  2, 43, 74,1) }
+.teal5 { background-color: rgba(  5, 64,108,1) }
+
+.shade{box-shadow: 10px 10px 5px rgba(  3,  3, 38,1) ;}
+
+li{
+    color:lightblue;
+}
