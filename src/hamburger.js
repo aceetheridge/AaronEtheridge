@@ -50,7 +50,7 @@ class Ham extends React.Component {
         }
       const menu = ['Home','About Me','Image-Detection-Website','Employment History','Projects','Contact Me'];
       const menuItems = menu.map((val,index)=>{
-        const nav = ['/','AboutMe','Image-Detection-Website','JobsCard','CardList','ContactMe'];
+        const nav = ['AaronEtheridge/','AboutMe','Image-Detection-Website','JobsCard','CardList','ContactMe'];
         return (
           <Link to={nav[index]}>
             <MenuItem 
