@@ -143,7 +143,7 @@ const App = () => {
                         
                         <Switch>
                             <Route exact path={process.env.PUBLIC_URL + '/'} render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
-                            <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/'} render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
+                            <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge'} render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/JobsCard'} render={props => (<div className=' aspect-ratio aspect-ratio--1x1'><JobsCard {...props} jobsList={jobsList} /></div>)}/>
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/CardList'} render={props => (<CardList {...props} projectList={projectList}/>)}/> 
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/AboutMe'} render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <About/></div>)}/>
