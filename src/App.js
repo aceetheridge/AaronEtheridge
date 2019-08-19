@@ -5,7 +5,7 @@ import { jobsList } from './jobsList';
 import CardList from './CardList';
 import Ham from './hamburger';
 import { Route, Switch } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import About from './About'
 import Particles from 'react-particles-js';
 import ContactMe from './ContactMe';
@@ -136,21 +136,27 @@ const App = () => {
     return(
         
             <div className='  center'>
-                    <BrowserRouter basename={process.env.PUBLIC_URL}>
+                    <HashRouter basename="/">
                         
                         <Particles className='particles ' params={particlesOptions} />
                         <Ham />
                         
                         <Switch>
-                            <Route exact path={process.env.PUBLIC_URL + '/'} render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
+                            <Route exact path="/" render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
+                            <Route  path="/JobsCard" render={props => (<div className=' aspect-ratio aspect-ratio--1x1'><JobsCard {...props} jobsList={jobsList} /></div>)}/>
+                            <Route  path="/CardList" render={props => (<CardList {...props} projectList={projectList}/>)}/> 
+                            <Route  path="/AboutMe" render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <About/></div>)}/>
+                            <Route  path="/ContactMe" render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <ContactMe/></div>)}/>
+                            <Route  path="/Image-Detection-Website" render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <Website/></div>)}/>
+                            {/* <Route exact path={process.env.PUBLIC_URL + '/'} render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge'} render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/JobsCard'} render={props => (<div className=' aspect-ratio aspect-ratio--1x1'><JobsCard {...props} jobsList={jobsList} /></div>)}/>
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/CardList'} render={props => (<CardList {...props} projectList={projectList}/>)}/> 
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/AboutMe'} render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <About/></div>)}/>
                             <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/ContactMe'} render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <ContactMe/></div>)}/>
-                            <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/Image-Detection-Website'} render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <Website/></div>)}/>
+                            <Route  path={process.env.PUBLIC_URL + 'AaronEtheridge/Image-Detection-Website'} render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <Website/></div>)}/> */}
                         </Switch>
-                    </BrowserRouter>
+                    </HashRouter>
                     
                 
             </div>
