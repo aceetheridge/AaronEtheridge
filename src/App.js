@@ -142,8 +142,9 @@ const App = () => {
                         <Ham />
                         
                         <Switch>
-                            <Route  path="/AaronEtheridge" render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
-                            <Route  path="/JobsCard" render={props => (<div className=' aspect-ratio aspect-ratio--1x1'><JobsCard {...props} jobsList={jobsList} /></div>)}/>
+                            <Route exact path="" render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
+                            <Route exact path="/" render={props => (<div><About /><JobsCard {...props} jobsList={jobsList}/> <CardList {...props} projectList={projectList}/> <ContactMe className='z-2'/></div> )}/>
+                            <Route exact path="/JobsCard" render={props => (<div className=' aspect-ratio aspect-ratio--1x1'><JobsCard {...props} jobsList={jobsList} /></div>)}/>
                             <Route  path="/CardList" render={props => (<CardList {...props} projectList={projectList}/>)}/> 
                             <Route  path="/AboutMe" render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <About/></div>)}/>
                             <Route  path='/ContactMe' render={props => (<div className='aspect-ratio aspect-ratio--1x1'> <ContactMe/></div>)}/>
