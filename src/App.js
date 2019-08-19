@@ -136,7 +136,7 @@ const App = () => {
     return(
         
             <div className='  center'>
-                    <BrowserRouter>
+                    <BrowserRouter basename={process.env.PUBLIC_URL}>
                         
                         <Particles className='particles ' params={particlesOptions} />
                         <Ham />
