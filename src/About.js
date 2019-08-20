@@ -20,7 +20,7 @@ class About extends React.Component {
                 <div className=' fl w-50-l mr5 ml5 '>
                     <h1 className='light-blue f2 f-headline-l'>Aaron C Etheridge</h1>
                     <p className='white'>Hello friend, my name is Aaron and I created this website as a portfolio for some of my professional work. In the spring of 2019, I graduated with a Bachelor's in Computer Engineering from the University of North Carolina at Charlotte.
-                    Ever since I was a child I've had a passion to to experiment and teach myself new things. Recently I have been teaching myself how to write cheats for some online videogames using C#. I like to dabble in just about everything not just technology.
+                    Ever since I was a child I've had a passion to experiment and teach myself new things. Recently I have been teaching myself how to write cheats for some online videogames using C#. I like to dabble in just about everything not just technology.
                     I play a little guitar and a little piano, occasionally I make EDM tracks with FL Studio. I'm an amateur acrylic painter. I play about 15 games of chess a day, and I like writing reviews for places on Google. Check out some of my projects below.
                     If you're interested in contacting me you can find my information on the contact section of the menu or at the bottom of this page.  </p>
                 </div>
