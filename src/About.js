@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './style.css';
 import { Link } from "react-router-dom";
+import '../src/profile.png';
 
 class About extends React.Component {
     constructor(props){
@@ -15,7 +16,7 @@ class About extends React.Component {
         
 
                 <div className=' w-25-ns flex items-center min-h-50-l mw5  '>
-                    <img className=' blue150 pa1 br-100 z-1' src="https://media.licdn.com/dms/image/C5603AQHZ9XIyp_EDgw/profile-displayphoto-shrink_200_200/0?e=1570665600&v=beta&t=oPMoOlicpYg4wA06e4TxhFezB2kQrSGAnYiIRWTVlPM"/>
+                    <img className=' blue150 pa1 br-100 z-1' src="../src/profile.png"/>
                 </div>    
                 <div className=' fl w-50-l mr5 ml5 '>
                     <h1 className='light-blue f2 f-headline-l'>Aaron C Etheridge</h1>
