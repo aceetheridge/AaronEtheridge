@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './style.css';
 import { Link } from "react-router-dom";
-import '../src/profile.png';
+import profile from './profile.png';
 
 class About extends React.Component {
     constructor(props){
@@ -16,7 +16,7 @@ class About extends React.Component {
         
 
                 <div className=' w-25-ns flex items-center min-h-50-l mw5  '>
-                    <img className=' blue150 pa1 br-100 z-1' src="../src/profile.png"/>
+                    <img className=' blue150 pa1 br-100 z-1' src={profile}/>
                 </div>    
                 <div className=' fl w-50-l mr5 ml5 '>
                     <h1 className='light-blue f2 f-headline-l'>Aaron C Etheridge</h1>
